@@ -19,5 +19,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/henrikcoll/ding-server
+          tags: ghcr.io/${{ github.repository }}:main
       - run: echo ${{ steps.docker_build.outputs.digest }}
