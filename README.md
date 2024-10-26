@@ -1,15 +1,17 @@
-# zara
+# Terminal
 
-To install dependencies:
+A discord bot to control my pelican servers.
 
-```bash
-bun install
+docker-compose.yaml
 ```
-
-To run:
-
-```bash
-bun run src/index.js
+services:
+  terminal:
+    image: ghcr.io/henrikcoll/terminal-bot:latest
+    environment:
+      DISCORD_TOKEN: 'Your discord token'
+      DISCORD_CLIENT_ID: 'Your discord client id'
+      DISCORD_GUILD_ID: 'Your discord guild id'
+      CTRL_CHANNEL_ID: 'Channel id for interface'
+      PELICAN_API_KEY: 'Your pelican api key'
+      PELICAN_URL: 'Url to pelican panel'
 ```
-
-This project was created using `bun init` in bun v1.1.20. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
