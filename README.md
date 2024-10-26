@@ -6,7 +6,7 @@ docker-compose.yaml
 ```
 services:
   terminal:
-    image: ghcr.io/henrikcoll/terminal-bot:latest
+    image: ghcr.io/henrikcoll/terminal-bot:main
     environment:
       DISCORD_TOKEN: 'Your discord token'
       DISCORD_CLIENT_ID: 'Your discord client id'
